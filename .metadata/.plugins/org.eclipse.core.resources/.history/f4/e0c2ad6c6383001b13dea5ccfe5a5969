@@ -1,0 +1,20 @@
+@charset "UTF-8";
+h1,h2 {
+	color: blue;
+	}
+#first {
+color:maroon;
+}	
+
+.green_text{
+ 	color:green;
+}
+.big_text{
+font-size: 25px;
+}
+
+.container{
+	border: 1px double blue;
+	width: 600px;
+	margin: 30px
+}

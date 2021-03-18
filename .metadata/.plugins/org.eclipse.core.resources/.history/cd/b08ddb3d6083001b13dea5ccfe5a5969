@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home page</title>
+</head>
+	<style>
+h1,h2 {
+	color: blue;
+	}
+div {
+color:aqua;
+}	
+	</style>
+<body>
+	<div>
+		<h1>This is home page</h1>
+		<h2>Second text</h2>
+		<div id="first">Hello world</div>
+		<div id="second">Second: Hello world</div>
+	</div>
+</body>
+</html>

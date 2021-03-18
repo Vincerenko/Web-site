@@ -1,0 +1,14 @@
+@charset "UTF-8";
+h1,h2 {
+	color: blue;
+	}
+#first {
+color:maroon;
+}	
+
+.green_text{
+ 	color:green;
+}
+.big_text{
+font-size: 35px;
+}
