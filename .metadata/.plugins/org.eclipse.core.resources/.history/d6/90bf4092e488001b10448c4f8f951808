@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home page</title>
+<link rel="stylesheet" href="/style/menu.css">
+</head>
+
+<body class="body2">
+<div class="ram">
+	
+	<div class="item2"><a href="/notes">Notes</a>
+	</div>
+	<div class="item2"><a href="/admin_page">Admin</a>
+	</div>
+	<div class="item2"><a href="/notes/create">Create</a>
+	</div>
+	<div class="item2"><a href="/logout">Logout</a>
+	</div>
+	<div class="item2"><a href="/">Login</a>
+	</div>
+	
+	</div>
+	
+	
+</body>
+</html>
