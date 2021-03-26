@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="https://www.thymeleaf.org">
 <head>
+<link rel="stylesheet" href="/style/notes.css"> 
 <meta charset="UTF-8">
 <title>Note list</title>
 </head>
@@ -12,31 +13,29 @@
 		</div>
 	</form>
 	<div>
-		<a href="/notes">notes</a>
+		<a href="/notes" class="w3">notes</a>
 	</div>
+	<div>
 	<h1 style="color:gray ; text-align: center">Note list</h1>
-	<a href="/notes/create">Create new note</a>
-	<div th:each="note : ${notes}">
-		<div>-----------------------</div>
-		<div th:text="${note.id}" style="color:teal;"></div>
+	
+	</div>
+	<div th:each="note : ${notes}" class="solid centre"  >
+		<a href="/notes/create" class="w2" >Create new note</a>
+		<div th:text="${note.id}" style="color:teal";></div>
 		<div th:text="${note.title}" style="color:green;"></div>
 		<div th:text=" ${note.message}" style="color:green;"></div>
 		<div th:text=" ${note.zd}" style="color:red;"></div>
 		<div>
 			<a th:href="@{/notes/{n}(n=${note.id})}">Info</a>
 		</div>
-
 		<div>
 			<a th:href="@{/notes/delete/{n}(n=${note.id})}"> Delete </a>
 		</div>
-
 		<div>
 			<a th:href="@{/notes/edit/{n}(n=${note.id})}">Edit</a>
 		</div>
 
-
-
-		<div>-----------------------</div>
+		
 	</div>
 
 </body>

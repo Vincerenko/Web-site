@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 .ram{
 	border: 1px double red;
 	width: 450px;
@@ -24,7 +26,12 @@
 }
 
 .body2 {
-  background-color: #ff8040;
+  background-color:grey;
+}
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 .item2{
 	border: 1px double blue;
