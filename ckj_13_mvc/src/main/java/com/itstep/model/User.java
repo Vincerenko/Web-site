@@ -1,4 +1,4 @@
-package com.itstep;
+package com.itstep.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,5 +20,6 @@ public class User {
 	private  String username;
 	private String password;
 	private String role;
+	private String email;
 	
 }

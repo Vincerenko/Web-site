@@ -1,4 +1,4 @@
-package com.itstep;
+package com.itstep.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -14,6 +14,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
+
+import com.itstep.UserSecuriryDetailsService;
 
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
@@ -31,8 +33,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http.authorizeRequests()
 		.antMatchers("/").permitAll()
 		.antMatchers("/notes/**").authenticated()
-		.antMatchers("/admin_page").hasRole("ADMIN")
-		.antMatchers("/admin_page").hasRole("MANAGER")
+		.antMatchers("/admin_page/**").hasRole("ADMIN")
+		.antMatchers("/admin_page/**").hasRole("MANAGER")
 		.and()
 		.formLogin().loginPage("/login")
 		.and()

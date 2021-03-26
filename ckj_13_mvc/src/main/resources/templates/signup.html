@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<div th:if="${param.eror}">This name exists!</div>
+<h1>
+Registr
+</h1>
+
+	<form action="/signup" method="post">
+	
+	<div>
+	<input type="text" name="username" placeholder="username">
+	</div>
+	<div>
+	<input type="password" name="password" placeholder="password">
+	</div>
+	<div>
+	<input type="email" name="email" placeholder="email">
+	</div>
+	<div>
+	<input type="submit" name="Registr"> 
+	</div>
+	
+	
+	<a href="/login">Do you have an account? Sign in</a>
+	</form>
+</body>
+</html>

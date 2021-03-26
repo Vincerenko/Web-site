@@ -1,4 +1,4 @@
-package com.itstep;
+package com.itstep.model;
 
 import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
