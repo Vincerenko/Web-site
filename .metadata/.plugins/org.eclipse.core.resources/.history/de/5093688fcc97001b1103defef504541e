@@ -1,0 +1,12 @@
+function check (){
+	let password = document.getElementById("psw").value
+	let confirmPassword = document.getElementById("confirm-psw").value
+	if(password==confirmPassword){
+		console.log("Password comfirned!")
+		return true
+	}
+	else{
+		alert("Password wrong!")
+		return false
+	}
+}

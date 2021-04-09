@@ -1,0 +1,5 @@
+package com.itstep.service;
+
+public class MailService {
+
+}

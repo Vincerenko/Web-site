@@ -1,0 +1,34 @@
+function check (){
+	let password = document.getElementById("psw").value
+	let confirmPassword = document.getElementById("confirm-psw").value
+	let name = document.getElementById("name").Value
+	let email = document.getElementById("e").value
+	if(!password.match("[A-Za-z0-9]{8,}")){
+		alert("Password should be 8 characters!")
+		return false
+	}
+	if(password==confirmPassword){
+		console.log("Password comfirned!")
+		return true
+	}
+	else{
+		alert("Password wrong!")
+		return false
+	}
+	
+}
+if(!name.match("[A-Za-z]{2,15}")){
+		console.log("Your name should be exist of letter!")
+		return false
+	}
+	else{
+		return true
+	}
+	
+	if(!email.match("[A-Za-z.@]{6,25}")){
+		console.log("Your email is wrong!")
+		return false
+	}
+	else {
+		return true
+	}

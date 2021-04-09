@@ -1,0 +1,10 @@
+package com.itstep.exception;
+
+public class EmailException extends RuntimeException{
+	
+	private static final long serialVersionUID = -3379037868784414129L;
+
+		public void EmailExistsException(String email) {
+			super("This email exists" + email);
+		}
+}

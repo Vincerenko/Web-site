@@ -1,0 +1,8 @@
+package com.itstep.repository;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ConfirmTokenRepository extends C {
+
+}

@@ -1,0 +1,14 @@
+package com.itstep.repository;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.itstep.model.ConfirToken;
+import com.itstep.model.User;
+
+@Repository
+public interface ConfirmTokenRepository extends CrudRepository<ConfirToken, Integer> {
+
+	
+	ConfirToken findByUser(User user) ;
+}

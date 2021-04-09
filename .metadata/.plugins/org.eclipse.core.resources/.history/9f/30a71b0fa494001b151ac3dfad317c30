@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+.locktext {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 200px;
+	width: 20em
+}
+
+.container {
+	margin: 25px auto;
+	position: relative;
+	width: 900px;
+}
+.button {
+  float:none;
+  color:#0080c0;
+  background-color:#00ffff;
+  border:1px solid border;
+  padding:7px 15px;
+  border-radius:20px;
+  font-size:1em;
+  cursor:pointer; 
+}
+.input {
+background-color:purple;
+  width:auto;
+  padding:5px;
+  height:10px;
+  border-radius:30px;
+  margin:5px 0;
+  outline: none;
+}
+
+.radio-check {
+  width:50px;
+  height:20px;
+  border:1px solid $border;
+  border-radius:30px;
+  margin-top:10px;
+  float:left;
+  text-align:center;
+  padding:4px 0;
+  color:$button;
+  font-size:0.65em;
+  position:relative;
+  label{
+    margin:0 2px;
+    cursor:pointer;
+  }
+  .switch-selection{
+    display: block;
+    position: absolute;
+    width:11px;
+    height:11px; 
+    border-radius:50%;
+    background:#babbbd;
+    margin-top:-11px;
+    margin-left:11px; 
+    transition: 0.2s ease-out;
+  } 
+  
+}
+
+ .radio-yes:checked ~ .switch-selection{
+    margin-left:25px !important;
+  } 
+  
+
+.check-label {
+  font-size:0.8em;
+  color:#7f8084;
+  margin-top:10px;
+  float:left;
+  padding:3px 0;
+  margin-left:10px;
+}

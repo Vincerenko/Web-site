@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="/style/signup.css">
+<meta charset="UTF-8">
+<style>
+  body { background: url(https://wallpaperaccess.com/full/2246713.jpg) 
+  -o-background-size: 100%;
+  ;  }
+</style>
+</head>
+<body>
+<div th:if="${param.eror}">This name or email was busy!</div>
+
+
+
+	<form action="/signup" method="post" class="locktext">
+	<h1 class="text">
+Register page
+</h1>
+	<div>
+	<input type="text" name="username" placeholder="username" class="input">
+	</div>
+	<div>
+	<input type="text" name="lastname" placeholder="lastname" class="input">
+	</div>
+	<div>
+	<input type="text" name="age" placeholder="age" class="input">
+	</div>
+	<div>
+	<input type="password" name="password" placeholder="password" class="input">
+	</div>
+	<div>
+	<input type="email" name="email" placeholder="email" class="input">
+	</div>
+	<div>
+	<input type="submit" name="Registr" class="submit"> 
+	</div>
+	
+	
+	<a href="/login" class="submit">Do you have an account? Sign in</a>
+	</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.locktext {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 200px;
+	width: 20em
+}
+
+.container {
+	margin: 25px auto;
+	position: relative;
+	width: 900px;
+}
+.button {
+  float:none;
+  color:#0080c0;
+  background-color:#00ffff;
+  border:1px solid border;
+  padding:7px 15px;
+  border-radius:20px;
+  font-size:1em;
+  cursor:pointer; 
+}

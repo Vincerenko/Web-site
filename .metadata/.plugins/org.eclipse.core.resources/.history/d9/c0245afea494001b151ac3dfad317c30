@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.locktext {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 200px;
+	width: 20em
+}
+
+.container {
+	margin: 25px auto;
+	position: relative;
+	width: 900px;
+}
+.button {
+  float:none;
+  color:#0080c0;
+  background-color:#00ffff;
+  border:1px solid border;
+  padding:7px 15px;
+  border-radius:20px;
+  font-size:1em;
+  cursor:pointer; 
+}
+.input {
+background-color:purple;
+  width:auto;
+  padding:5px;
+  height:10px;
+  border-radius:30px;
+  margin:5px 0;
+  outline: none;
+}
+
+.button-1 {
+    color: #232323;
+    background: transparent;
+    border: 1px solid #232323;
+    position: inherit;
+    font-size: 14px;
+    letter-spacing: .3em;
+    font-family: 'Montserrat', sans-serif;
+    padding: 17px 34px 17px 39px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+

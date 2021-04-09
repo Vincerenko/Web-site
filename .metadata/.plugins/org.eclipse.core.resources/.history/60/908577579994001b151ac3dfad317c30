@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="/style/signup.css">
+<meta charset="UTF-8">
+</head>
+<body>
+<div th:if="${param.eror}">This name or email was busy!</div>
+
+<h1>
+Registr
+</h1>
+
+	<form action="/signup" method="post" class="locktext">
+	
+	<div>
+	<input type="text" name="username" placeholder="username">
+	</div>
+	<div>
+	<input type="text" name="lastname" placeholder="lastname">
+	</div>
+	<div>
+	<input type="text" name="age" placeholder="age">
+	</div>
+	<div>
+	<input type="password" name="password" placeholder="password">
+	</div>
+	<div>
+	<input type="email" name="email" placeholder="email">
+	</div>
+	<div>
+	<input type="submit" name="Registr"> 
+	</div>
+	
+	
+	<a href="/login">Do you have an account? Sign in</a>
+	</form>
+</body>
+</html>

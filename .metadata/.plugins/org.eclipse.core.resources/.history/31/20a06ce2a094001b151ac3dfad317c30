@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<style>
+  body { background: url(https://mhwirth.com/wp-content/uploads/Login.jpg); }
+</style>
+<link rel="stylesheet" href="/style/login.css">
+<meta charset="UTF-8">
+</head>
+<body>
+<div th:if="${param.error}">Invalid username or password!</div>
+<div th:if="${param.denied}">Access denied!</div>
+	<h1>Login page</h1>
+	
+	<form action="/login" method="post">
+	
+	<div>
+	<input type="text" name="username">
+	</div>
+	<div>
+	<input type="password" name="password">
+	</div>
+	<div>
+	<input type="checkbox" name="rember me"> Remember me
+	</div>
+	<div>
+	<input type="submit" value="Sing in">
+	</div>
+	<a href="/signup">If you didn't have an acc, klick on me!</a>
+	</form>
+</body>
+</html>

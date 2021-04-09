@@ -1,0 +1,5 @@
+package com.itstep.repository;
+
+public class ConfirmTokenRepository {
+
+}
