@@ -10,6 +10,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -27,6 +29,7 @@ public class User {
 	private  String username;
 	private String lastname;
 	private int age;
+	@JsonIgnore
 	private String password;
 	private String role;
 	private String email;
@@ -35,6 +38,7 @@ public class User {
 	@OneToMany(mappedBy="user", fetch=FetchType.EAGER)
 	@ToString.Exclude
 	@lombok.EqualsAndHashCode.Exclude
+	@JsonIgnore
 	private List<Note> notes = new ArrayList<>();
 	
 	public void addNote(Note note) {

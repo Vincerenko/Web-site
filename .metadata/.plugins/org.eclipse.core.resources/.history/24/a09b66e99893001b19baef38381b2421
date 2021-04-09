@@ -1,8 +1,0 @@
-package com.itstep.exception;
-
-public class EmailException extends RuntimeException{
-	
-		public void EmailExistsException(String email) {
-			super("This email exists" + email);
-		}
-}
