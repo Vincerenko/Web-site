@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<style>
+body {
+	background:
+		url(https://i.pinimg.com/originals/ff/b8/0a/ffb80a56c527350d0725a001fc3afe0b.jpg);
+}
+</style>
+<link rel="stylesheet" href="/style/login.css">
+<meta charset="UTF-8">
+</head>
+<body class="locktext">
+	<div th:if="${param.error}">Invalid username or password!</div>
+	<div th:if="${param.denied}">Access denied!</div>
+	<div class="container">
+		<h1>Login page</h1>
+
+		<form action="/login" method="post">
+
+			<div>
+				<input type="text" name="username" class="input">
+			</div>
+			<div>
+				<input type="password" name="password" class="input">
+			</div>
+
+			<div>
+				<input type="checkbox" name="rember me"> Remember me
+			</div>
+			<div>
+				<input type="submit" value="Sing in" class="button">
+			</div>
+			<a href="/signup" class="button-1">If you don't have an acc,
+				klick on me!</a>
+		</form>
+	</div>
+</body>
+</html>

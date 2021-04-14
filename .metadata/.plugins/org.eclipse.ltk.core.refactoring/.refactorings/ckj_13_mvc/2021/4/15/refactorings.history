@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ckj_13_mvc/src/main/resources/templates/ForgotPassword.html&apos; to &apos;forgotPassword.html&apos;" description="Rename resource &apos;ForgotPassword.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/ForgotPassword.html" name="forgotPassword.html" stamp="1618323634140" updateReferences="true"/>
+</session>
