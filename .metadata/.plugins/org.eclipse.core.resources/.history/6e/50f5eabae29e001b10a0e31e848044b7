@@ -1,0 +1,11 @@
+function NoteForm() {
+	let response = fetch("/api/notes")
+	let notes
+	if (response.ok) {
+		notes = response.json()
+		alert(notes)
+	} else {
+		console.log(response.status)
+	}
+}
+NoteForm()

@@ -1,0 +1,26 @@
+async function ListNote() {
+	let response = await fetch("/api/notes")
+	let notes
+	if (response.ok) {
+		notes = await response.json()
+	} else {
+		console.log(response.status)
+	}
+
+	
+
+	let el4 = document.createElement("div")
+
+
+	el4 = document.getElementById("el1")
+
+	
+	for (index = 0; index < notes.length; ++index) {
+		el4.append("Title : " + notes[index].title +" "+"Mes\sage : " + notes[index].message );
+	}
+	
+
+
+
+}
+ListNote()

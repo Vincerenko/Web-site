@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .back{
-	background-color: yellow;
+	background-color: rgb(0, 64, 0);
 	
 }
 .button{
@@ -26,6 +26,7 @@
 
 .centre{
 	text-align: center
+	
 }
 .solid {
 	border-style: solid;

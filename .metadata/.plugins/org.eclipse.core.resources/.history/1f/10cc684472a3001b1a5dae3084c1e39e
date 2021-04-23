@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head th:insert="index :: headerfile">
+</head>
+<body>
+	<div th:insert="index :: menu"></div>
+	<form action="/notes/search">
+		<input type="text" name="word">
+	</form>
+	<h1>Notes list</h1>
+	<div>
+		<div>
+			<input id="title" placeholder="Title">
+		</div>
+		<div>
+			<textarea id="message" placeholder="Message"></textarea>
+		</div>
+		<button onclick="saveNote()">Create new note</button>
+	</div>
+	<div id="notes" class="items"></div>
+
+	<div>Some notes here</div>
+	<script type="text/javascript" src="/scripts/listNotes.js"></script>
+</body>
+</html>

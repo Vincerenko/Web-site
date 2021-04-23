@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="/style/notes.css">
+<meta charset="UTF-8">
+<title>Note list</title>
+</head>
+<body style="background-color: lightblue">
+
+	<div th:insert="index :: main"></div>
+
+	<form action="/notes/search" name="note" method="get">
+		<div>
+			<input name="word" type="text" placeholder="search">
+		</div>
+	</form>
+	
+	<div>
+		<a href="/notes" class="w3">notes</a>
+	</div>
+	<div>
+		<h1 style="color: gray; text-align: center">Note list</h1>
+
+	</div>
+	<div>
+	<button type="button" onclick="function note()">Create new note</button>
+	<br>
+	<input id="t1" name="title" type="text" placeholder="title">
+	<br>
+	<input if="m1" name="message" type="text" placeholder="message">
+	</div>
+		<div>
+	<script type="text/javascript" src="/script/note.js">
+	
+	</script>
+	</div>
+	
+
+</body>
+</html>

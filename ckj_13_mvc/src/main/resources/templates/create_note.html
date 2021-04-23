@@ -9,14 +9,17 @@
 	<h2 class="p1" style="margin-bottom: auto; ">Create new note</h2>
 	<form action="/notes/add" name="note" method="post">
 		<div class="button">
-			<input name="title" type="text" placeholder="title">
+			<input id="t" name="title" type="text" placeholder="title">
 		</div>
 		<div >
-			<textarea name="message" placeholder="message"></textarea>
+			<textarea id="m" name="message" placeholder="message"></textarea>
 		</div>
 		<div class="button">
 		<input style="background-color: green"  type="submit" value="Create" >
 		</div>
 	</form>
+	<script type="text/javascript" src="/script/notes.js">
+
+</script>
 </body>
 </html>

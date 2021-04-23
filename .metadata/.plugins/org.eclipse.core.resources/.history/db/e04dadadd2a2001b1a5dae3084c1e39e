@@ -1,0 +1,15 @@
+async function note2() {
+	let url = "http://localhost:8090/api/notes"
+	let note = notes
+	let noteJSON = JSON.stringify(note)
+	let reponse = await fetch(url, {
+		method: "POST",
+		headers: headers,
+		body: noteJSON
+	}
+	)
+	
+}
+note2()
+
+

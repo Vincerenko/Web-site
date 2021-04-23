@@ -1,0 +1,33 @@
+{
+	"folders": {},
+	"connections": {
+		"mysql8-178ffef0191-155709200c9a3a4f": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "j6mhlisiwe4h5590",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "yvu4xahse0smimsc.chr7pe7iynqr.eu-west-1.rds.amazonaws.com",
+				"port": "3306",
+				"database": "j6mhlisiwe4h5590",
+				"url": "jdbc:mysql://yvu4xahse0smimsc.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/j6mhlisiwe4h5590",
+				"home": "mysql_client",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
